@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+</head>
+<body>
+
+	<div class="header">
+		<div class="wrapper">
+			<div class="menu"> 
+				<img src="images/home/logo.png">
+				<ol class="nav_menu"> <!-- список и элементы списка -->
+					{% for i in nav_menu %}
+						<li><a>{{ i.name }}</a></li>
+					{% endfor %}
+				<ol>
+			</div>
+		</div>
+	</div>
+	
+	<div class="slider">
+		<div class="wrapper">
+			<div class="slider_text">
+				<p>BOGDAN CREATIVE AGENCY</p>
+				<p>MAXIMAL FREELANCE PORTFELL</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="wrapper">
+		<ol class="Tab-Nav">	
+			{% for i in nav_menu %}
+			<li><a>{{ i.name }}</a></li>
+			{% endfor %}
+		</ol>
+	</div>
+
+	<div class="wrapper">
+		<div class="grid_images">
+			<div class="column_1">
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+		
+			<div class="column_2">
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+		
+			<div class="column_3">
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="wrapper">
+		<div class="button">
+			<a>LOAD MORE</a>
+		</div>
+	</div>
+	
+	<div class="wrapper">
+		<div class="logo.b">
+			<div></div>
+		</div>
+	</div>
+
+	<footer>
+		<ol class="soc_media">
+			{% for i in soc_media %}
+				<li></li>
+			{% endfor %}
+		</ol>
+	</footer>
+
+</body>
+</html>
+
+<!--
+			<li><a><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+			<li><a><i class="fa fa-google" aria-hidden="true"></i></a></li>
+			<li><a><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+			<li><a><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+			<li><a><i class="fa fa-vk" aria-hidden="true"></i></a></li>
+			<li><a><i class="fa fa-pinterest-p" aria-hidden="true"></i><a></li>
+			<li><a><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+-->
